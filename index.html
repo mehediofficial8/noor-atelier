@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noor Atelier | Women's Fashion</title>
+
+<!-- ============ META PIXEL: apnar code ekhane boshan ============
+  1. Events Manager theke Pixel er base code copy korun.
+  2. Niche "PASTE YOUR PIXEL CODE HERE" er jaygay paste korun.
+  3. Ei file e age theke fbq('track', ...) event gulo deya ache,
+     tai shudhu base code boshalei shob kaj korbe.
+-->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1252048420438120');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1252048420438120&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- ============================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F1F5;--ink:#2A1630;--accent:#B4235A;--soft:#EBDCE6;--sage:#6F8A78;--card:#fff;--line:#d9c6d3}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1022;--ink:#f3e7ef;--accent:#ee6a9a;--soft:#33203a;--card:#2a1a31;--line:#4a3453}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 'DM Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:'Bodoni Moda',Georgia,serif;font-weight:500;line-height:1.1}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;border-bottom:1px solid var(--line)}
+.logo{font-family:'Bodoni Moda',Georgia,serif;font-size:1.5rem;font-style:italic}
+nav a{color:var(--ink);text-decoration:none;margin-left:22px;font-weight:500}
+nav a:hover{color:var(--accent)}
+.cartbtn{background:var(--ink);color:var(--bg);border:0;border-radius:99px;padding:8px 18px;font:inherit;font-weight:700;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:5vw;align-items:center;padding:7vw 5vw}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem)}
+.hero p{max-width:44ch;margin:20px 0 28px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;border:0;border-radius:4px;padding:14px 28px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
+.art{aspect-ratio:3/4;border-radius:200px 200px 12px 12px;background:linear-gradient(160deg,var(--accent) 0 38%,var(--soft) 38% 70%,var(--sage) 70%);display:grid;place-items:end center;padding:24px}
+.art span{background:var(--bg);color:var(--ink);padding:8px 16px;border-radius:99px;font-weight:700}
+section{padding:60px 5vw}
+section>h2{font-size:2.2rem;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:26px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.sw{height:210px;cursor:pointer;display:grid;place-items:center;font-family:'Bodoni Moda',serif;font-size:3.4rem;color:rgba(255,255,255,.85)}
+.info{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.info h3{font-size:1.2rem}
+.price{font-weight:700;color:var(--accent)}
+.info .btn{margin-top:auto;padding:10px;border-radius:4px}
+.news{background:var(--soft);text-align:center}
+.news form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.news input{padding:13px 16px;border:1px solid var(--line);border-radius:4px;min-width:min(300px,100%);font:inherit;background:var(--card);color:var(--ink)}
+#cart{position:fixed;inset:0 0 0 auto;width:min(380px,100%);background:var(--card);border-left:1px solid var(--line);padding:24px;transform:translateX(100%);transition:transform .25s;z-index:5;overflow:auto}
+#cart.open{transform:none}
+#cart li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);list-style:none}
+#cart ul{margin:16px 0;padding:0}
+.log{margin:0 5vw 40px;background:var(--ink);color:var(--bg);border-radius:6px;padding:18px;font:14px/1.7 ui-monospace,Menlo,monospace}
+.log h3{font-family:'DM Sans',sans-serif;font-size:1rem;margin-bottom:8px}
+footer{padding:28px 5vw;border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr}nav{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Noor Atelier</div>
+  <nav><a href="#shop">Shop</a><a href="#join">Newsletter</a></nav>
+  <button class="cartbtn" id="openCart">Cart (<span id="count">0</span>)</button>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <h1>Dressed for every season of you.</h1>
+    <p>Sarees, kurtis, dresses and accessories, cut for women who like to move.</p>
+    <a class="btn" href="#shop">Shop the collection</a>
+  </div>
+  <div class="art" aria-hidden="true"><span>New: Eid edit</span></div>
+</div>
+
+<section id="shop">
+  <h2>This week's picks</h2>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="news" id="join">
+  <h2>Get early access to new drops</h2>
+  <form id="lead">
+    <input type="email" id="email" placeholder="you@example.com" required aria-label="Email address">
+    <button class="btn" type="submit">Join the list</button>
+  </form>
+  <p id="leadmsg" style="margin-top:12px" role="status"></p>
+</section>
+
+<div class="log" aria-live="polite">
+  <h3>Pixel practice log (events fired from this page)</h3>
+  <div id="log">Kono event ekhono hoy nai. Kono product e click korun.</div>
+</div>
+</main>
+
+<aside id="cart" aria-label="Cart">
+  <h2>Your cart</h2>
+  <ul id="items"></ul>
+  <p><strong>Total: <span id="total">0</span> BDT</strong></p>
+  <p style="margin-top:16px"><button class="btn" id="buy">Place order</button>
+  <button class="cartbtn" id="closeCart" style="margin-left:8px">Close</button></p>
+</aside>
+
+<footer>Practice site for Meta Pixel testing. Products are demo items, no real orders.</footer>
+
+<script>
+var PRODUCTS=[
+ {id:'KRT-01',name:'Cotton Printed Kurti',price:1450,c:'#B4235A',l:'K'},
+ {id:'SRE-02',name:'Jamdani Style Saree',price:4800,c:'#6F8A78',l:'S'},
+ {id:'DRS-03',name:'Floral Midi Dress',price:2650,c:'#7B4B94',l:'D'},
+ {id:'ORN-04',name:'Soft Georgette Orna',price:890,c:'#D08A5B',l:'O'},
+ {id:'BAG-05',name:'Everyday Tote Bag',price:1900,c:'#3F5E7A',l:'B'},
+ {id:'SHO-06',name:'Block Heel Sandals',price:2200,c:'#A0405A',l:'H'},
+ {id:'DRS-07',name:'Flowy Maxi Dress',price:3200,c:'#4A6FA5',l:'M'},
+ {id:'DRS-08',name:'Satin Party Gown',price:5900,c:'#5B2A6B',l:'G'},
+ {id:'DRS-09',name:'Anarkali Dress',price:3800,c:'#C0572F',l:'A'},
+ {id:'DRS-10',name:'Salwar Kameez Set',price:3400,c:'#2F7D6B',l:'Z'},
+ {id:'DRS-11',name:'Wrap Dress',price:2900,c:'#9C2F4F',l:'W'},
+ {id:'DRS-12',name:'Co-ord Set (Top and Skirt)',price:3600,c:'#8A7A3E',l:'C'},
+ {id:'DRS-13',name:'Shirt Dress',price:2500,c:'#58708C',l:'T'},
+ {id:'DRS-14',name:'Embroidered Three-Piece',price:4500,c:'#A4577A',l:'E'}
+];
+var cart=[];
+
+// Safe wrapper: Pixel na boshale-o page bhenge jabe na
+function track(ev,data){
+  var line=ev+(data?' '+JSON.stringify(data):'');
+  if(typeof fbq==='function'){fbq('track',ev,data||{});line+='  [sent to Pixel]';}
+  else{line+='  [Pixel code ekhono boshano hoy nai]';}
+  var log=document.getElementById('log');
+  if(log.dataset.has!=='1'){log.innerHTML='';log.dataset.has='1';}
+  var d=document.createElement('div');d.textContent=new Date().toLocaleTimeString()+'  '+line;
+  log.prepend(d);
+}
+
+var grid=document.getElementById('grid');
+PRODUCTS.forEach(function(p){
+  var el=document.createElement('div');el.className='item';
+  el.innerHTML='<div class="sw" style="background:'+p.c+'" role="button" tabindex="0" aria-label="View '+p.name+'">'+p.l+'</div>'+
+  '<div class="info"><h3>'+p.name+'</h3><span class="price">'+p.price+' BDT</span><button class="btn">Add to cart</button></div>';
+  var view=function(){track('ViewContent',{content_ids:[p.id],content_name:p.name,content_type:'product',value:p.price,currency:'BDT'});};
+  var sw=el.querySelector('.sw');
+  sw.addEventListener('click',view);
+  sw.addEventListener('keydown',function(e){if(e.key==='Enter')view();});
+  el.querySelector('.btn').addEventListener('click',function(){
+    cart.push(p);render();
+    track('AddToCart',{content_ids:[p.id],content_name:p.name,content_type:'product',value:p.price,currency:'BDT'});
+  });
+  grid.appendChild(el);
+});
+
+function total(){return cart.reduce(function(s,p){return s+p.price;},0);}
+function render(){
+  document.getElementById('count').textContent=cart.length;
+  document.getElementById('total').textContent=total();
+  document.getElementById('items').innerHTML=cart.length?cart.map(function(p){return '<li><span>'+p.name+'</span><span>'+p.price+'</span></li>';}).join(''):'<li>Cart khali. Kichu add korun.</li>';
+}
+render();
+
+var cartEl=document.getElementById('cart');
+document.getElementById('openCart').onclick=function(){
+  cartEl.classList.add('open');
+  if(cart.length)track('InitiateCheckout',{value:total(),currency:'BDT',num_items:cart.length});
+};
+document.getElementById('closeCart').onclick=function(){cartEl.classList.remove('open');};
+
+document.getElementById('buy').onclick=function(){
+  if(!cart.length){return;}
+  track('Purchase',{value:total(),currency:'BDT',content_ids:cart.map(function(p){return p.id;}),content_type:'product',num_items:cart.length});
+  cart=[];render();cartEl.classList.remove('open');
+  alert('Demo order placed. Purchase event fire hoyeche.');
+};
+
+document.getElementById('lead').addEventListener('submit',function(e){
+  e.preventDefault();
+  track('Lead',{content_name:'Newsletter signup'});
+  document.getElementById('leadmsg').textContent='Thanks! You are on the list.';
+  e.target.reset();
+});
+</script>
+</body>
+</html>
